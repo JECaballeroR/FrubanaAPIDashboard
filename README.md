@@ -3,9 +3,9 @@
 ## Descripción General
 La aplicación **FrubanaAPIDashboard** es un dashboard interactivo que se conecta con una API para recomendar productos basados en el usuario y en otros productos. La API está construida utilizando FastAPI, mientras que el dashboard está desarrollado con Streamlit.
 
-## Requisitos
+## Requisitos base
 - Python 3.7+
-- Pip
+- pip
 
 ## Instalación
 
