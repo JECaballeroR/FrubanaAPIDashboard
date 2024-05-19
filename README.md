@@ -10,12 +10,13 @@ La aplicación **FrubanaAPIDashboard** es un dashboard interactivo que se conect
 ## Instalación
 
 1. **Clonar el repositorio:**
-   ```sh
+```sh
    git clone https://github.com/yourusername/FrubanaAPIDashboard.git
-   cd FrubanaAPIDashboard  ```
+   cd FrubanaAPIDashboard
+ ```
 
 
-2. **Instalar las dependencias:**
+3. **Instalar las dependencias:**
  ```sh
 pip install -r requirements.txt
 cd FrubanaAPIDashboard 
