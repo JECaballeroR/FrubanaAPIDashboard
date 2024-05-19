@@ -89,7 +89,7 @@ def cargar_databases():
 
     return df_ventas
 
-@st.cache_data
+
 def recomendar_por_usuario(_usuario):
     headers = {
         'Content-Type': 'application/json;charset=utf-8',
@@ -266,11 +266,11 @@ st.sidebar.markdown(f"**Usuario Elegido:** {st.session_state.selected_user}")
 
 selected_user = st.session_state.selected_user
 
-productos_recomendados = recomendar_por_usuario(selected_user)
+productos_recomendados = recomendar_por_usuario(st.session_state.selected_user)
 
 
 graficar_recomendaciones(list(productos_recomendados['Recomendaciones']))
-st.markdown(f"## Basado en las compras de {selected_user}:")
+st.markdown(f"## Basado en las compras de {st.session_state.selected_user}:")
 
 for product in list(productos_recomendados['Recomendaciones']):
     st.write(product)
@@ -315,7 +315,7 @@ def limpiar_prediccion(prediccion):
 
 opciones =  cargar_opciones()
 
-@st.cache_data
+
 def recomendar_por_producto(producto):
     headers = {
         'Content-Type': 'application/json;charset=utf-8',
