@@ -16,7 +16,7 @@ La aplicación **FrubanaAPIDashboard** es un dashboard interactivo que se conect
  ```
 
 
-3. **Instalar las dependencias:**
+1. **Instalar las dependencias:**
  ```sh
 pip install -r requirements.txt
 cd FrubanaAPIDashboard 
