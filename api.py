@@ -7,12 +7,12 @@ app = FastAPI(title='API Frubana', version="0.42.69")
 
 @app.post("/recomendar-fp", tags=["Recomendación"])
 async def recomendar_fp_growth(entrada: EntradaModeloFP):
-    """Endpoint para recomendar basado en el user"""
+    """Endpoint para recomendar basado en los productos"""
     modelo=ModeloFPAPI(producto=entrada.producto)
     return modelo.predecir()
 
 @app.post("/recomendar-user", tags=["Recomendación"])
 async def recomendar_user(entrada: EntradaModeloKNN):
-    """Endpoint para recomendar"""
+    """Endpoint para recomendar basado en el user"""
     modelo=ModeloKNNAPI(user=entrada.user)
     return modelo.predecir()
